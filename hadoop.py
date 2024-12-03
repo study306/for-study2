@@ -101,7 +101,7 @@ for line in sys.stdin:
         movie_id, movie_name, popularity_score = parts
         try:
             popularity_score = float(popularity_score)
-            print('%s\t%s\t%f' % (movie_name, movie_id, popularity_score))
+            print('%s\\t%s\\t%f' % (movie_name, movie_id, popularity_score))
         except ValueError:
             continue
 
